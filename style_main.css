@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Jura', serif;
+    color: aliceblue;
+    font-size: 20px;
+    height: 100%;
+    
+}
+
+.navbar {
+    background-color: rgba(64, 53, 221, 0.158);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar p {
+    font-size: 30px;
+    padding-left: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(124, 194, 255);
+}
+a:hover {
+    color: gray
+}
+
+a img {
+    height: auto;
+    width: 100px;
+    padding-right: 1em;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+
+.leftbar {
+    grid-column: 1/3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+}
+.leftbar a {
+    padding: 1em 0.5em 1em 1em;
+}
+.leftbar p {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.content {
+    grid-column: 3/12;
+}
+.content p {
+    text-align: justify;
+    padding: 0.5em 0.5em 1em 1em;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+.active {
+    color: gray
+}
