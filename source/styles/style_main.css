@@ -62,7 +62,7 @@ section {
 .content {
     grid-column: 3/12;
 }
-p {
+.content p {
     text-align: justify;
     padding: 0.5em 0.5em 1em 1em;
 }
