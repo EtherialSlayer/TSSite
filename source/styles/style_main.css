@@ -4,12 +4,11 @@
 }
 
 
-body {
+html, body {
     font-family: 'Jura', serif;
     color: aliceblue;
     font-size: 20px;
     height: 100%;
-    
 }
 
 .navbar {
@@ -32,17 +31,15 @@ a:hover {
     color: gray
 }
 
-a img {
+input {
     height: auto;
     width: 100px;
-    padding-right: 1em;
 }
 
 section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    
+    height: 100%;
 }
 
 .leftbar {
@@ -60,7 +57,7 @@ section {
 }
 
 .content {
-    grid-column: 3/12;
+    grid-column: 3/13;
 }
 .content p {
     text-align: justify;
@@ -74,4 +71,42 @@ footer {
 
 .active {
     color: gray
+}
+.reverse {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-heading {
+        display: none;
+    } 
+    .logo {
+        padding: 0;
+    }
+    a img {
+        height: auto;
+        width: 100px;
+        padding-right: 0;
+    }
+
+    .leftbar {
+        display: none;
+    }
+
+    .content {
+        grid-column: 1/13;
+    }
+    .content p {
+        padding: 0.5em;
+    }
+    
+    .reverse {
+        text-align: center;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.301);
+    }
 }
